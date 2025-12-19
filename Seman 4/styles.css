@@ -1,0 +1,81 @@
+/* ===== Estilos generales ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* color suave de fondo */
+  margin: 0;
+  padding-top: 70px; /* para que el menú no tape el contenido */
+}
+
+/* ===== Encabezado ===== */
+.hero {
+  background-color: #0d6efd; /* azul Bootstrap */
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* ===== Botón ===== */
+.btn-primary {
+  background-color: #198754; /* verde */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #157347;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* ===== Tarjetas ===== */
+.card {
+  border-radius: 10px;
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* ===== Formulario ===== */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #e9ecef;
+}
+
+footer a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Media Query (pantallas pequeñas) ===== */
+@media (max-width: 576px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
