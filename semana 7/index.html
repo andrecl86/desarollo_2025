@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input {
+            margin: 5px 0;
+            display: block;
+        }
+        button {
+            margin-top: 10px;
+        }
+        ul {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Productos</h1>
+
+    <!-- Formulario -->
+    <input type="text" id="nombre" placeholder="Nombre del producto">
+    <input type="number" id="valor" placeholder="Valor">
+    <input type="text" id="descripcion" placeholder="Descripción">
+    <button id="btnAgregar">Agregar producto</button>
+
+    <!-- Lista -->
+    <ul id="lista-productos"></ul>
+
+    <!-- Enlace al script -->
+    <script src="script.js"></script>
+</body>
+</html>
