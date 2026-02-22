@@ -1,0 +1,109 @@
+/* ===== FONDO GENERAL ===== */
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg,#fff3e0,#ffe0b2);
+}
+
+/* ===== HEADER ===== */
+header{
+    background: linear-gradient(90deg,#e65100,#ff9800);
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* ===== MENU ===== */
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:white;
+    color:#e65100;
+}
+
+/* ===== CONTENIDO ===== */
+main{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULOS */
+h2{
+    color:#e65100;
+    border-bottom:3px solid #ff9800;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* TEXTO */
+p{
+    font-size:18px;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== TARJETAS DE PRODUCTOS ===== */
+.card{
+    background:#fff8f0;
+    border-radius:12px;
+    padding:15px;
+    margin:15px;
+    display:inline-block;
+    width:220px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card h3{
+    color:#e65100;
+}
+
+/* ===== BOTON ===== */
+.btn{
+    background:#e65100;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#bf360c;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#3e2723;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
