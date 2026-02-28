@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<h2>Lista de Productos</h2>
+
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+    <th>Acciones</th>
+</tr>
+
+{% for producto in productos %}
+<tr>
+    <td>{{ producto.get_id() }}</td>
+    <td>{{ producto.get_nombre() }}</td>
+    <td>${{ producto.get_precio() }}</td>
+    <td>{{ producto.get_cantidad() }}</td>
+    <td>
+        <a href="{{ url_for('editar_producto', id=producto.get_id()) }}">Editar</a>
+        <a href="{{ url_for('eliminar_producto', id=producto.get_id()) }}">Eliminar</a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
