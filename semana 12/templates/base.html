@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Flask</title>
+    <!-- Vincular el CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Mi Inventario</h1>
+        <nav style="text-align:center; margin-bottom:20px;">
+            <a href="{{ url_for('index') }}">Inicio</a> |
+            <a href="{{ url_for('agregar_producto') }}">Agregar Producto</a> |
+            <a href="{{ url_for('ver_txt') }}">Ver TXT</a> |
+            <a href="{{ url_for('ver_json') }}">Ver JSON</a> |
+            <a href="{{ url_for('ver_csv') }}">Ver CSV</a> |
+            <a href="{{ url_for('buscar_producto') }}">Buscar</a>
+        </nav>
+    </header>
+
+    <!-- Contenido específico de cada página -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de página simple -->
+    <footer style="text-align:center; margin-top:40px; color:#555;">
+        <p>© 2026 Mi Inventario Flask</p>
+    </footer>
+</body>
+</html>

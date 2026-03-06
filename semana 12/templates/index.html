@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Comida Rápida</title>
+</head>
+<body>
+    <h1>Inventario de Comida Rápida</h1>
+    <ul>
+        <li><a href="{{ url_for('mostrar_datos', formato='txt') }}">Ver Productos (TXT)</a></li>
+        <li><a href="{{ url_for('mostrar_datos', formato='json') }}">Ver Productos (JSON)</a></li>
+        <li><a href="{{ url_for('mostrar_datos', formato='csv') }}">Ver Productos (CSV)</a></li>
+        <li><a href="{{ url_for('agregar') }}">Agregar Producto</a></li>
+    </ul>
+</body>
+</html>

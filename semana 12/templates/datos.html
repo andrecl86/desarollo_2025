@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - {{ formato.upper() }}</title>
+</head>
+<body>
+    <h1>Productos ({{ formato.upper() }})</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+        {% for p in productos %}
+        <tr>
+            <td>{{ p.id if p.id else p['id'] }}</td>
+            <td>{{ p.nombre if p.nombre else p['nombre'] }}</td>
+            <td>{{ p.precio if p.precio else p['precio'] }}</td>
+            <td>{{ p.cantidad if p.cantidad else p['cantidad'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>

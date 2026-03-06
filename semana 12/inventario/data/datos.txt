@@ -1,0 +1,10 @@
+1,Hamburguesa,5.5,10
+2,Papas Fritas,2.5,20
+3,Refresco,1.5,30
+4,Hot Dog,3.0,15
+5,Pizza porción,4.0,12
+6,Taco,2.75,25
+7,Helado,1.75,20
+8,Batido,3.5,18
+9,Ensalada,4.5,10
+10,Nuggets,3.25,22

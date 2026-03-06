@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo y contenedor */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Tablas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* Formularios */
+form {
+    width: 50%;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #3b82f6;
+}
+
+/* Links */
+a {
+    color: #1e3a8a;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3b82f6;
+}
+
+/* Botones de acción dentro de tabla */
+td a {
+    padding: 5px 10px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+td a:hover {
+    background-color: #3b82f6;
+}
