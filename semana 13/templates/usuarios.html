@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Usuarios</title>
+</head>
+
+<body>
+
+<h1>Registro de Usuarios</h1>
+
+<form action="/guardar_usuario" method="post">
+
+Nombre:<br>
+<input type="text" name="nombre"><br>
+
+Correo:<br>
+<input type="email" name="mail"><br>
+
+Contraseña:<br>
+<input type="password" name="password"><br><br>
+
+<button type="submit">Guardar Usuario</button>
+
+</form>
+
+<hr>
+
+<h2>Lista de Usuarios</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Email</th>
+</tr>
+
+{% for usuario in usuarios %}
+
+<tr>
+<td>{{ usuario[0] }}</td>
+<td>{{ usuario[1] }}</td>
+<td>{{ usuario[2] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/">Volver a comidas</a>
+
+</body>
+</html>

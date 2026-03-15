@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comidas</title>
+</head>
+<body>
+
+<h1>Lista de comidas</h1>
+
+<h2>Agregar comida</h2>
+
+<form action="/agregar" method="post">
+
+Nombre comida:<br>
+<input type="text" name="nombre"><br>
+
+Descripción:<br>
+<input type="text" name="descripcion"><br>
+
+Precio:<br>
+<input type="text" name="precio"><br><br>
+
+<button type="submit">Agregar</button>
+
+</form>
+
+<hr>
+
+<h2>Comidas registradas</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Descripción</th>
+<th>Precio</th>
+</tr>
+
+{% for comida in comidas %}
+
+<tr>
+<td>{{ comida[0] }}</td>
+<td>{{ comida[1] }}</td>
+<td>{{ comida[2] }}</td>
+<td>{{ comida[3] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/usuarios">Ir a usuarios</a>
+
+</body>
+</html>
